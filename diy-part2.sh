@@ -11,9 +11,9 @@
 #
 
 #Add new luci-app-openclash
-rm -rf feeds/luci/applications/luci-app-openclash
-git clone -b dev --depth 1 https://github.com/vernesong/OpenClash.git /tmp/OpenClash
-mv /tmp/OpenClash/luci-app-openclash package/
+# rm -rf feeds/luci/applications/luci-app-openclash
+# git clone -b dev --depth 1 https://github.com/vernesong/OpenClash.git /tmp/OpenClash
+# mv /tmp/OpenClash/luci-app-openclash package/
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
