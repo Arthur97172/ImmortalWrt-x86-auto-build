@@ -29,7 +29,16 @@ sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 # 添加额外软件包
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+
+# 添加 万能推送
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
+# 添加passwall2
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/luci-app-passwall2
 #加入turboacc
 curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh
 chmod -R 777 add_turboacc.sh
 ./add_turboacc.sh
+
+# 修改系统信息
+cp -f $GITHUB_WORKSPACE/99-default-settings package/emortal/default-settings/files/99-default-settings
+cp -f $GITHUB_WORKSPACE/banner package/base-files/files/etc/banner
