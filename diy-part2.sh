@@ -11,9 +11,10 @@
 #
 
 # 添加额外插件
-git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
-git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+#加入turboacc
+curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh
+chmod -R 777 add_turboacc.sh
+./add_turboacc.sh
 
 # 移除要替换的包
 rm -rf feeds/luci/applications/luci-app-openclash
