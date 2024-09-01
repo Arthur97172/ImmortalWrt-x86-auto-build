@@ -10,6 +10,10 @@
 # See /LICENSE for more information.
 #
 
+# 添加额外插件
+git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # 移除要替换的包
 rm -rf feeds/luci/applications/luci-app-openclash
