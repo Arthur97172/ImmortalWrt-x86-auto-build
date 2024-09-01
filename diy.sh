@@ -82,20 +82,20 @@ defaultsettings=*/*/default-settings
 #sed -i "s/+@LUCI_LANG_en/+@LUCI_LANG_${language}/g" ${defaultsettings}/Makefile
 
 # Modify password to Null
-sed -i '/CYXluq4wUazHjmCDBCqXF/d' ${defaultsettings}/files/zzz-default-settings
+sed -i '/CYXluq4wUazHjmCDBCqXF/d' ${defaultsettings}/files/99-default-settings
 
 # Modify the version number
 sed -i "s/OpenWrt /${owner} build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" ${defaultsettings}/files/zzz-default-settings
 
 # Remvoe openwrt_ing
-sed -i '/sed -i "s\/# \/\/g" \/etc\/opkg\/distfeeds.conf/a\sed -i "\/openwrt_ing\/d" \/etc\/opkg\/distfeeds.conf' ${defaultsettings}/files/zzz-default-settings
+sed -i '/sed -i "s\/# \/\/g" \/etc\/opkg\/distfeeds.conf/a\sed -i "\/openwrt_ing\/d" \/etc\/opkg\/distfeeds.conf' ${defaultsettings}/files/99-default-settings
 
 # Modify network setting
-sed -i '$i uci set network.lan.ifname="eth1 eth2 eth3 eth4"' ${defaultsettings}/files/zzz-default-settings
-sed -i '$i uci set network.wan.ifname="eth0"' ${defaultsettings}/files/zzz-default-settings
-#sed -i '$i uci set network.wan.proto=pppoe' ${defaultsettings}/files/zzz-default-settings
-#sed -i '$i uci set network.wan6.ifname="eth0"' ${defaultsettings}/files/zzz-default-settings
-#sed -i '$i uci commit network' ${defaultsettings}/files/zzz-default-settings
+#sed -i '$i uci set network.lan.ifname="eth1 eth2 eth3 eth4"' ${defaultsettings}/files/99-default-settings
+#sed -i '$i uci set network.wan.ifname="eth0"' ${defaultsettings}/files/99-default-settings
+#sed -i '$i uci set network.wan.proto=pppoe' ${defaultsettings}/files/99-default-settings
+#sed -i '$i uci set network.wan6.ifname="eth0"' ${defaultsettings}/files/99-default-settings
+#sed -i '$i uci commit network' ${defaultsettings}/files/99-default-settings
 
 # Modify Default PPPOE Setting
 #sed -i '$i uci set network.wan.username=PPPOE_USERNAME' ${defaultsettings}/files/zzz-default-settings
