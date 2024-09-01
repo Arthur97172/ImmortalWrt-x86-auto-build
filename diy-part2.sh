@@ -43,6 +43,3 @@ curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turbo
 chmod -R 777 add_turboacc.sh
 ./add_turboacc.sh
 
-# 修改系统信息
-cp -f $GITHUB_WORKSPACE/99-default-settings package/emortal/default-settings/files/99-default-settings
-cp -f $GITHUB_WORKSPACE/banner package/base-files/files/etc/banner
