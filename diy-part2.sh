@@ -15,3 +15,6 @@ sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generat
 
 # 修改主机名
 sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
+
+# 添加额外软件包
+git clone https://github.com/gdy666/luci-app-lucky.git package/luci-app-lucky
