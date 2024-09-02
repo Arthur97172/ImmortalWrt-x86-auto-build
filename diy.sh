@@ -91,8 +91,8 @@ sed -i "s/OpenWrt /${owner} build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" ${d
 sed -i '/sed -i "s\/# \/\/g" \/etc\/opkg\/distfeeds.conf/a\sed -i "\/openwrt_ing\/d" \/etc\/opkg\/distfeeds.conf' ${defaultsettings}/files/99-default-settings
 
 # Modify network setting
-#sed -i '$i uci set network.lan.ifname="eth1 eth2 eth3 eth4"' ${defaultsettings}/files/99-default-settings
-#sed -i '$i uci set network.wan.ifname="eth0"' ${defaultsettings}/files/99-default-settings
+sed -i '$i uci set network.lan.ifname="eth1 eth2 eth3 eth4"' ${defaultsettings}/files/99-default-settings
+sed -i '$i uci set network.wan.ifname="eth0"' ${defaultsettings}/files/99-default-settings
 #sed -i '$i uci set network.wan.proto=pppoe' ${defaultsettings}/files/99-default-settings
 #sed -i '$i uci set network.wan6.ifname="eth0"' ${defaultsettings}/files/99-default-settings
 #sed -i '$i uci commit network' ${defaultsettings}/files/99-default-settings
