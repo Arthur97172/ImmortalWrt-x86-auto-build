@@ -85,7 +85,7 @@
 　└── <b>退出</b>
 </details>
 
-![avatar](https://github.com/Arthur97172/ImmortalWrt-x86-auto-build/main/001.jpg)
+![avatar](https://github.com/Arthur97172/ImmortalWrt-x86-auto-build/blob/main/001.jpg)
 
 ## 特别提示
 
