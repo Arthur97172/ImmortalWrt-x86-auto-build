@@ -77,7 +77,7 @@ defaultsettings=*/*/default-settings
 [ "${repo}" == "openwrt" ] && language=zh_cn || language=zh_Hans
 
 # Set default language
-#sed -i "s/en/${language}/g" ${defaultsettings}/files/zzz-default-settings
+#sed -i "s/en/${language}/g" ${defaultsettings}/files/99-default-settings
 #sed -i "s/en/${language}/g" package/luci/modules/luci-base/root/etc/uci-defaults/luci-base
 #sed -i "s/+@LUCI_LANG_en/+@LUCI_LANG_${language}/g" ${defaultsettings}/Makefile
 
@@ -100,7 +100,7 @@ sed -i '$i uci set network.wan.ifname="eth0"' ${defaultsettings}/files/99-defaul
 # Modify Default PPPOE Setting
 #sed -i '$i uci set network.wan.username=PPPOE_USERNAME' ${defaultsettings}/files/99-default-settings
 #sed -i '$i uci set network.wan.password=PPPOE_PASSWD' ${defaultsettings}/files/99-default-settings
-#sed -i '$i uci commit network' ${defaultsettings}/files/zzz-default-settings
+#sed -i '$i uci commit network' ${defaultsettings}/files/99-default-settings
 
 # Modify ssid
 #sed -i 's/OpenWrt/OpenWrting/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
