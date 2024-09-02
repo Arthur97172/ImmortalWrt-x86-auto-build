@@ -135,8 +135,7 @@ jobs:
             git clone --depth=1 -b 23.x https://github.com/sbwml/packages_lang_golang ./feeds/packages/lang/golang
           fi
           ./scripts/feeds install -a
-          #./scripts/feeds uninstall `grep Package ./feeds/ing.index | awk -F': ' '{print $2}'`
-          #./scripts/feeds install -p ing -a
+          ./scripts/feeds install -a
 
           cp -f "${WORKSPACE}/${config}" "./.config"
           cp -f "${WORKSPACE}/${script}" "./diy.sh"
