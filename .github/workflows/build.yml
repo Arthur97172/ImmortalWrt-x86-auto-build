@@ -126,8 +126,8 @@ jobs:
           #sed -i "/src-git ing /d; 1 i src-git ing https://github.com/wjz304/openwrt-packages;${CONFIG_REPO}" feeds.conf.default
           sed -i '/src-git kenzo /d; 1 i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
           sed -i '/src-git small /d; 1 i src-git small https://github.com/kenzok8/small' feeds.conf.default
-          sed -i '/src-git small /d; 1 i src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main' feeds.conf.default
-          #sed -i '/src-git kiddin9 /d; 1 i src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
+          #sed -i '/src-git small /d; 1 i src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main' feeds.conf.default
+          sed -i '/src-git kiddin9 /d; 1 i src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
           
           ./scripts/feeds update -a
           if [ -d ./feeds/packages/lang/golang ]; then
