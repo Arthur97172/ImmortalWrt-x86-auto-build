@@ -14,7 +14,7 @@
 
 ## Note
 
->源码仓库：[Lean's LEDE](https://github.com/coolsnowwolf/lede)  
+>源码仓库：[ImmortalWrt](https://github.com/immortalwrt/immortalwrt)  
 
 >默认后台：default IP is 192.168.5.1 and no default password.
 
@@ -85,7 +85,7 @@
 　└── <b>退出</b>
 </details>
 
-![avatar](https://github.com/Arthur97172/OpenWrt_Build/blob/myapp/001.jpg)
+![avatar](https://github.com/Arthur97172/ImmortalWrt-x86-auto-build/blob/myapp/001.jpg)
 
 ## 特别提示
 
