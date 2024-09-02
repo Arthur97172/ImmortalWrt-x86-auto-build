@@ -9,7 +9,7 @@ name: Build Immort
 
 on:
   schedule:
-    - cron: "0 0 1/2 * *"
+    - cron: "0 0 15 * *"
   workflow_dispatch:
 
 jobs:
