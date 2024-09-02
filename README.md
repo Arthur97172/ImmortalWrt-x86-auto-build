@@ -99,7 +99,7 @@
 
 ## Credits
 - [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean's LEDE](https://github.com/coolsnowwolf/lede)
+- [Immortalwrt](https://github.com/immortalwrt/immortalwrt)
 - [P3TERX's Actions](https://github.com/P3TERX/Actions-OpenWrt)
 - [SuLingGG's Actions](https://github.com/SuLingGG/OpenWrt-Rpi)
 - [Wjz304's Actions](https://github.com/wjz304/OpenWrt_Build)
