@@ -4,11 +4,11 @@
 [ImmortalWrt-x86-auto-build](https://github.com/arthur97172/ImmortalWrt-x86-auto-build)
 
 <!-- version -->
-<a href="https://github.com/arthur97172/OpenWrt_Build/releases">
-<img src="https://img.shields.io/github/release-pre/arthur97172/OpenWrt_Build.svg?style=flat" alt="latest version"/>
+<a href="https://github.com/arthur97172/ImmortalWrt-x86-auto-build/releases">
+<img src="https://img.shields.io/github/release-pre/arthur97172/ImmortalWrt-x86-auto-build.svg?style=flat" alt="latest version"/>
 </a>
 <!-- license -->
-<a href="https://github.com/arthur97172/OpenWrt_Build">
+<a href="https://github.com/arthur97172/ImmortalWrt-x86-auto-build">
 <img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat" alt="license"/>
 </a>
 
