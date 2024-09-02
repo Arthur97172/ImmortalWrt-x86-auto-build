@@ -1,5 +1,5 @@
 # OpenWrt_Build
-自动编译ImmortalWrt-x86,每两天自动编译一次。如有需要可在Release处自行下载！
+自动编译ImmortalWrt-x86,每月自动编译一次。如有需要可在Release处自行下载！
 ## 介绍  
 [ImmortalWrt-x86-auto-build](https://github.com/arthur97172/ImmortalWrt-x86-auto-build)
 
