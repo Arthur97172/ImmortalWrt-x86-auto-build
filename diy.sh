@@ -85,7 +85,7 @@ defaultsettings=*/*/default-settings
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' ${defaultsettings}/files/99-default-settings
 
 # Modify the version number
-sed -i "s/OpenWrt /${owner} build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" ${defaultsettings}/files/zzz-default-settings
+sed -i "s/OpenWrt /${owner} build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" ${defaultsettings}/files/99-default-settings
 
 # Remvoe openwrt_ing
 sed -i '/sed -i "s\/# \/\/g" \/etc\/opkg\/distfeeds.conf/a\sed -i "\/openwrt_ing\/d" \/etc\/opkg\/distfeeds.conf' ${defaultsettings}/files/99-default-settings
@@ -98,8 +98,8 @@ sed -i '$i uci set network.wan.ifname="eth0"' ${defaultsettings}/files/99-defaul
 #sed -i '$i uci commit network' ${defaultsettings}/files/99-default-settings
 
 # Modify Default PPPOE Setting
-#sed -i '$i uci set network.wan.username=PPPOE_USERNAME' ${defaultsettings}/files/zzz-default-settings
-#sed -i '$i uci set network.wan.password=PPPOE_PASSWD' ${defaultsettings}/files/zzz-default-settings
+#sed -i '$i uci set network.wan.username=PPPOE_USERNAME' ${defaultsettings}/files/99-default-settings
+#sed -i '$i uci set network.wan.password=PPPOE_PASSWD' ${defaultsettings}/files/99-default-settings
 #sed -i '$i uci commit network' ${defaultsettings}/files/zzz-default-settings
 
 # Modify ssid
