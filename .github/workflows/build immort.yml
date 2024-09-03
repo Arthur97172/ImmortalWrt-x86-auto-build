@@ -99,8 +99,8 @@ jobs:
           CONFIG_OWNER="${CONFIG_ARRAY[1]}"
           CONFIG_NAME="${CONFIG_ARRAY[2]}"
 
-          if [ "${CONFIG_REPO}" == "openwrt" ]; then
-            REPO_URL="https://github.com/openwrt/openwrt"
+          if [ "${CONFIG_REPO}" == "mimmort" ]; then
+            REPO_URL="https://github.com/immortalwrt/immortalwrt"
             REPO_BRANCH="master"
           fi
 
