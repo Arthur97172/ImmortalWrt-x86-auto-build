@@ -73,7 +73,7 @@ fi
 
 # immort    ==> ${defaultsettings}
 # openwrt ==> feeds/ing/default-settings
-defaultsettings=*/*/default-settings
+defaultsettings=package/emortal/default-settings
 [ "${repo}" == "openwrt" ] && language=zh_cn || language=zh_Hans
 
 # Set default language
