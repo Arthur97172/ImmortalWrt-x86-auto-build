@@ -86,7 +86,9 @@ defaultsettings=package/emortal/default-settings
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' ${defaultsettings}/files/99-default-settings
 
 # Modify the version number
-sed -i "s/OpenWrt /${owner} build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" ${defaultsettings}/files/99-default-settings
+# sed -i "s/DISTRIB_PUBLISHER /${owner} DISTRIB_D $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release
+sed -i '/DISTRIB_DESCRIPTION=/a DISTRIB_PUBLISHER="Arthur"\nDISTRIB_DATE="'$(TZ=UTC-8 date "+%Y.%m.%d")'"' package/base-files/files/etc/openwrt_release
+
 
 # Remvoe openwrt_ing
 sed -i '/sed -i "s\/# \/\/g" \/etc\/opkg\/distfeeds.conf/a\sed -i "\/openwrt_ing\/d" \/etc\/opkg\/distfeeds.conf' ${defaultsettings}/files/99-default-settings
