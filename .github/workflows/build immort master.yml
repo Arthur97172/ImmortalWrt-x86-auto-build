@@ -123,10 +123,10 @@ jobs:
           git pull
 
           # feeds
-          sed -i '/src-git kiddin9 /d; 1 i src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
-          sed -i '/src-git kenzo /d; 1 i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-          sed -i '/src-git small /d; 1 i src-git small https://github.com/kenzok8/small' feeds.conf.default
-          sed -i '/src-git kexsen929 /d; 1 i src-git kexsen929 https://github.com/hexsen929/openwrt_packages' feeds.conf.default
+          sed -i '/src-git kiddin9 /d; 5 i src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
+          sed -i '/src-git kenzo /d; 6 i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+          sed -i '/src-git small /d; 7 i src-git small https://github.com/kenzok8/small' feeds.conf.default
+          sed -i '/src-git kexsen929 /d; 8 i src-git kexsen929 https://github.com/hexsen929/openwrt_packages' feeds.conf.default
           #sed -i '/src-git mihomo /d; 1 i src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main' feeds.conf.default
           #sed -i '/src-git nuexini /d; 1 i src-git xuexini https://github.com/NueXini/NueXini_Packages' feeds.conf.default
           
