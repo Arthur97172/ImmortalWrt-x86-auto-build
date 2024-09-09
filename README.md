@@ -21,7 +21,7 @@
 
 ## Preview 请点击箭头→ 查看详情
 <details>
-<summary><b>&nbsp;ImmortalWrt_插件预览</b></summary>
+<summary><b>&nbsp;ImmortalWrt X86_插件预览</b></summary>
 <br/>
 <details>
 <summary><b>├── 状态</b></summary>
