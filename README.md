@@ -26,13 +26,13 @@
 <details>
 <summary><b>├── 状态</b></summary>
 　├── 概况<br/>
+　├── 路由<br/>
 　├── 防火墙<br/>
-　├── 路由表<br/>
 　├── 系统日志<br/>
-　├── 内核日志<br/>
 　├── 系统进程<br/>
 　├── 实时信息<br/>
-　├── 负载均衡<br/>
+　├── WireGuard<br/> 
+　├── MultiWAN管理器<br/>  
 　└── 释放内存
 </details>
 <details>
@@ -40,7 +40,6 @@
 　├── 系统<br/>
 　├── 管理权<br/>
 　├── 软件包<br/>
-　├── TTYD 终端<br/>
 　├── 启动项<br/>
 　├── 计划任务<br/>
 　├── 挂载点<br/>
@@ -48,39 +47,37 @@
 　├── 定时重启<br/>
 　├── 文件传输<br/>
 　├── 重启<br/>
-　└── 关机
+　├── 关机<br/>  
+　└── 终端
 </details>
 <details>
 <summary><b>├── 服务</b></summary>
 　├── PassWall<br/>
+　├── HomeProxy<br/>  
 　├── ShadowSocksR Plus+<br/>
+　├── 应用过滤<br/>  
 　├── DDNSTO远程控制<br/>
-　├── 应用过滤<br/>
-　├── MosDNS<br/>
+　├── MosDNS<br/>  
 　├── OpenClash<br/>
-　├── 动态 DNS<br/>
-　├── UPnP<br/>
-　└── MWAN3分流助手
+　├── DDNS-GO<br/>
+　├── SmartDNS<br/>
+　├── 带宽监控<br/>  
+　├── MWAN3分流助手<br/>
+　├── MihomoTProxy<br/>
+　└── UPnP
 </details>
 <details>
 <summary><b>├── 网络</b></summary>
 　├── 接口<br/>
+　├── 路由<br/>
 　├── DHCP/DNS<br/>
-　├── 主机名<br/>
 　├── IP/MAC绑定<br/>
-　├── 静态路由<br/>
-　├── 诊断<br/>
+　├── 网络诊断<br/>
 　├── 防火墙<br/>
+　├── 流量监控<br/>
 　├── Turbo ACC网络加速<br/>
-　├── 多线多拨<br/>
-　└── 负载均衡
-</details>
-<details>
-<summary><b>├── 带宽监控</b></summary>
-　├── 显示<br/>
-　├── 配置<br/>
-　├── 备份<br/>
-　└── 实时流量监测
+　├── 多线多拨<br/>  
+　└── MultiWAN管理器
 </details>
 　└── <b>退出</b>
 </details>
