@@ -458,7 +458,7 @@ config node 'node_77777'
 	list group '4f3540e4f4a3a4eabb3eb7987457ea18'
 
 config node 'node_1111'
-	option label '🇺🇲 美国节点'
+	option label '🇺🇸 美国节点'
 	option type 'selector'
 	option filter_nodes 'whitelist'
 	list filter_keywords '🇺🇸|US|us|美国|美|United States'
