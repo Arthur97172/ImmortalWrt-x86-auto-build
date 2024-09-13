@@ -72,6 +72,7 @@ jobs:
           sudo apt install --reinstall libc6
           sudo systemctl daemon-reload
           sudo apt -y autoremove --purge
+          sudo apt install clang
           sudo apt clean
 
           git clone --depth=1 https://github.com/openwrt-dev/po2lmo
