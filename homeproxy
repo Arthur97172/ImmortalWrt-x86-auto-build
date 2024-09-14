@@ -61,7 +61,6 @@ config homeproxy 'subscription'
 	option filter_nodes 'blacklist'
 	list filter_keywords '重置|到期|过期|剩余|套餐|失联|去除'
 	list filter_keywords 'Expiration|Remaining'
-	list subscription_url 'https://d0c557b3-6afd-32fd-8423-776a813849fd.nginx24ftq.xyz/link/UldP5DZu7HVi57Jv?sub=3'
 
 config homeproxy 'server'
 	option enabled '0'
