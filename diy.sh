@@ -74,8 +74,8 @@ fi
 
 # immort    ==> ${defaultsettings}
 # openwrt ==> feeds/ing/default-settings
-defaultsettings=package/emortal/default-settings
-[ "${repo}" == "openwrt" ] && language=zh_cn || language=zh_Hans
+# defaultsettings=package/emortal/default-settings
+# [ "${repo}" == "openwrt" ] && language=zh_cn || language=zh_Hans
 
 # Set default language
 #sed -i "s/en/${language}/g" ${defaultsettings}/files/99-default-settings
@@ -95,14 +95,14 @@ sed -i 's/^root:[^:]*:/root::/' package/base-files/files/etc/shadow
 sed -i '/sed -i "s\/# \/\/g" \/etc\/opkg\/distfeeds.conf/a\sed -i "\/openwrt_ing\/d" \/etc\/opkg\/distfeeds.conf' ${defaultsettings}/files/99-default-settings
 
 # Modify network setting
-sed -i '$i uci set network.lan.list ports="eth1"' ${defaultsettings}/files/99-default-settings
-sed -i '$i uci set network.lan.list ports="eth2"' ${defaultsettings}/files/99-default-settings
-sed -i '$i uci set network.lan.list ports="eth3"' ${defaultsettings}/files/99-default-settings
-sed -i '$i uci set network.lan.list ports="eth4"' ${defaultsettings}/files/99-default-settings
-sed -i '$i uci set network.wan.device="eth0"' ${defaultsettings}/files/99-default-settings
-sed -i '$i uci set network.wan.ifname="eth0"' ${defaultsettings}/files/99-default-settings
-sed -i '$i uci set network.wan.proto=pppoe' ${defaultsettings}/files/99-default-settings
-#sed -i '$i uci set network.wan6.ifname="eth0"' ${defaultsettings}/files/99-default-settings
+sed -i '$i uci add_list network.lan.list ports="eth1"' package/base-files/files/etc/board.d/99-default_network
+sed -i '$i uci add_list network.lan.list ports="eth2"' package/base-files/files/etc/board.d/99-default_network
+sed -i '$i uci add_list network.lan.list ports="eth3"' package/base-files/files/etc/board.d/99-default_network
+sed -i '$i uci add_list network.lan.list ports="eth4"' package/base-files/files/etc/board.d/99-default_network
+sed -i '$i uci set network.wan.device="eth0"' package/base-files/files/etc/board.d/99-default_network
+sed -i '$i uci set network.wan.ifname="eth0"' package/base-files/files/etc/board.d/99-default_network
+sed -i '$i uci set network.wan.proto=pppoe' package/base-files/files/etc/board.d/99-default_network
+#sed -i '$i uci set network.wan6.ifname="eth0"' package/base-files/files/etc/board.d/99-default_network
 #sed -i '$i uci commit network' ${defaultsettings}/files/99-default-settings
 
 # Modify Default PPPOE Setting
