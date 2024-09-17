@@ -87,6 +87,8 @@ sed -i 's/^root:[^:]*:/root::/' package/base-files/files/etc/shadow
 #sed -i '/CYXluq4wUazHjmCDBCqXF/d' ${defaultsettings}/files/99-default-settings
 
 # Modify the version number
+sed -i "s/DISTRIB_PUBLISHER /Arthur DISTRIB_D $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release
+sed -i '/DISTRIB_DESCRIPTION=/a DISTRIB_PUBLISHER="'Arthur'"\nDISTRIB_DATE="'$(TZ=UTC-8 date "+%Y.%m.%d")'"' package/base-files/files/etc/openwrt_release
 #sed -i "s/DISTRIB_PUBLISHER /${owner} DISTRIB_D $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release
 #sed -i '/DISTRIB_DESCRIPTION=/a DISTRIB_PUBLISHER="Arthur"\nDISTRIB_DATE="'$(TZ=UTC-8 date "+%Y.%m.%d")'"' package/base-files/files/etc/openwrt_release
 
