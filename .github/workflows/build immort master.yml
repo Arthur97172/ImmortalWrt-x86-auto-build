@@ -133,8 +133,10 @@ jobs:
           ./scripts/feeds update -a
           if [ -d ./feeds/packages/lang/golang ]; then
             rm -rf ./feeds/packages/lang/golang
+            rm -rf ./feeds/luci/applications/luci-app-homeproxy
             git clone --depth=1 -b 23.x https://github.com/sbwml/packages_lang_golang ./feeds/packages/lang/golang
           fi
+          ./scripts/feeds update -a          
           ./scripts/feeds install -a
           ./scripts/feeds install -a
 
