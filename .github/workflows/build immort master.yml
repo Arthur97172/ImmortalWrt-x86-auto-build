@@ -160,9 +160,6 @@ jobs:
             fi
             popd
           fi
-          
-          # 添加 uhttpd 自启动命令到 rc.local
-          echo "/etc/init.d/uhttpd enable" >> package/base-files/files/etc/rc.local
 
           echo -e "download package"
           make download -j8 V=s
